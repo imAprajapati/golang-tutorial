@@ -9,18 +9,21 @@ import (
 var wg sync.WaitGroup // Pointer
 
 func main() {
-	websitelist := []string{
-		"https://www.google.com",
-		"https://go.dev",
-		"https://fb.com",
-		"https://github.com",
-		"https://youtube.com",
-	}
-	for _, endpoint := range websitelist {
-		go getStatusCode(endpoint)
-		wg.Add(1)
-	}
-	wg.Wait()
+	// array()
+	// customMap()
+	strct()
+	// websitelist := []string{
+	// 	"https://www.google.com",
+	// 	"https://go.dev",
+	// 	"https://fb.com",
+	// 	"https://github.com",
+	// 	"https://youtube.com",
+	// }
+	// for _, endpoint := range websitelist {
+	// 	go getStatusCode(endpoint)
+	// 	wg.Add(1)
+	// }
+	// wg.Wait()
 }
 
 func getStatusCode(endpoint string) {
